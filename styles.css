@@ -77,3 +77,52 @@
     padding: 2rem;
 
 }
+
+@media only screen and (max-width: 768px) {
+
+    .hero,
+    .sidebar,
+    .main-content,
+    .extra-content,
+    .images,
+    .posts {
+        grid-column: col-start 1 / -1;
+    }
+
+    .nav {
+        grid-row: 1;
+    }
+
+    .hero {
+        grid-row: 2 / 3;
+
+    }
+
+    .sidebar {
+        grid-row: 3 / 4;
+    }
+
+    .main-content {
+        grid-row: 4 / 7;
+    }
+
+
+
+    .extra-content {
+        grid-row: 7 / 8;
+    }
+
+    .images {
+        grid-row: 8 / 10;
+    }
+
+    .posts {
+        grid-row: 10 / 12;
+    }
+
+    .footer {
+        grid-row: 12 / 13;
+        height: 6rem;
+
+    }
+}
